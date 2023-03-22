@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Wild Trip</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a <% if (page_name === 'index') { %> class="nav-link active" <% } %> class="nav-link" href="/">Home</a>
+          <a <% if (page_name === 'trips') { %> class=" nav-link active" <% } %> class="nav-link" href="/trips">Trips</a>
+          <a <% if (page_name === 'new') { %> class="nav-link active" <% } %> class="nav-link" href="/new">New</a>
+        </div>
+      </div>
+    </div>
+</nav>

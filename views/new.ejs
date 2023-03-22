@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <%- include('./components/navbar'); %>
+
+    <h1 class="trips_title white_font">Add a new trip</h1>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-xs-10 col-sm-6 col-lg-6 new_container">
+                <form action="/add-trip" method="POST">
+                    <div class="mb-3">
+                        <label for="cityName" class="form-label">City Name</label>
+                        <input type="text" class="form-control" id="cityName" name="name" placeholder="Paris">
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control" id="description" name="description" rows="5" placeholder="Paris is the capital of France..."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Select Image</label>
+                        <input class="form-control" type="file" id="image" name="image">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add City</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

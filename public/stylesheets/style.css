@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top, #9d50bb, #6e48aa);
+  min-height: 100vh;
+}
+
+.navbar {
+  height: 10vh;
+}
+
+.white_font {
+  color: white;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.home_container {
+  height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/photo1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trips_title {
+  font-size: 1.5rem;
+  margin: 5vh 0 2vh 10vw;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.card_container {
+  margin-top: 50px;
+}
+
+.new_container {
+  border-radius: 5px;
+  -webkit-box-shadow: -1px 1px 3px 3px rgba(93, 52, 121, 0.75);
+  -moz-box-shadow: -1px 1px 3px 3px rgba(93, 52, 121, 0.75);
+  box-shadow: -1px 1px 3px 3px rgba(93, 52, 121, 0.75);
+  padding: 2vh 0;
+}
